@@ -1,0 +1,14 @@
+@mixin focus-ring {
+  outline: 3px solid $primary-red;
+  outline-offset: 3px;
+}
+
+@mixin card-hover {
+  transition: transform 220ms ease, box-shadow 220ms ease;
+
+  &:hover,
+  &:focus-within {
+    box-shadow: $card-shadow;
+    transform: translateY(-0.35rem);
+  }
+}

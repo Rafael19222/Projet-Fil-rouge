@@ -1,0 +1,10 @@
+.btn-danger {
+  --bs-btn-bg: #{$primary-red};
+  --bs-btn-border-color: #{$primary-red};
+  --bs-btn-hover-bg: #{$primary-red};
+  --bs-btn-hover-border-color: #{$primary-red};
+}
+
+.btn-outline-light:hover {
+  color: $primary-dark;
+}

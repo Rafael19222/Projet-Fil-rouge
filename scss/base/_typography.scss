@@ -1,0 +1,17 @@
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+.text-muted {
+  color: $text-muted !important;
+}

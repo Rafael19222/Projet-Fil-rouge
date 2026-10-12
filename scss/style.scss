@@ -1,0 +1,21 @@
+@import "utils/variables";
+@import "utils/mixins";
+@import "base/reset";
+@import "base/typography";
+@import "components/buttons";
+@import "components/cards";
+@import "components/navigation";
+@import "layout/header";
+@import "layout/hero";
+@import "layout/footer";
+@import "pages/home";
+@import "vendors/bootstrap-custom";
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

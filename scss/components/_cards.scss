@@ -1,0 +1,22 @@
+.movie-card {
+  @include card-hover;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba($text-light, 0.14);
+  border-radius: $card-radius;
+  background: lighten($primary-dark, 5%);
+}
+
+.movie-card img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.movie-card .card-body {
+  padding: 1rem;
+}
+
+.movie-card .badge {
+  margin-right: 0.25rem;
+}

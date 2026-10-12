@@ -1,0 +1,15 @@
+.navbar {
+  --bs-navbar-color: #{$text-muted};
+  --bs-navbar-hover-color: #{$text-light};
+  --bs-navbar-brand-color: #{$primary-red};
+  --bs-navbar-brand-hover-color: #{$primary-red};
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar .nav-link.active {
+  color: $text-light;
+}

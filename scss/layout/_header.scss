@@ -1,0 +1,14 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: rgba($primary-dark, 0.96);
+  backdrop-filter: blur(0.75rem);
+}
+
+.site-header .form-control {
+  min-width: 12rem;
+  background: lighten($primary-dark, 5%);
+  border-color: rgba($text-light, 0.2);
+  color: $text-light;
+}

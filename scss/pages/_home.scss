@@ -1,0 +1,12 @@
+.content-wrapper {
+  padding-top: $section-spacing;
+  padding-bottom: $section-spacing;
+}
+
+.movie-section {
+  scroll-margin-top: 5rem;
+}
+
+.signup-section {
+  background: lighten($primary-dark, 5%);
+}

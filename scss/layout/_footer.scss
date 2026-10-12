@@ -1,0 +1,12 @@
+.site-footer {
+  border-top: 1px solid rgba($text-light, 0.14);
+}
+
+.site-footer a {
+  color: $text-muted;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-red;
+  }
+}
