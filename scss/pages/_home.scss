@@ -10,3 +10,80 @@
 .signup-section {
   background: lighten($primary-dark, 5%);
 }
+
+.hidden {
+  display: none !important;
+}
+
+.movie-card {
+  cursor: pointer;
+}
+
+.movie-card.watched {
+  opacity: 0.6;
+  position: relative;
+}
+
+.movie-card.watched::after {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.25rem;
+  background: green;
+  color: white;
+  content: "✓ Vu";
+}
+
+.custom-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1050;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.custom-modal.is-visible {
+  display: flex;
+}
+
+.custom-modal .modal-content {
+  position: relative;
+  width: min(100%, 32rem);
+  padding: 2rem;
+  border-radius: $card-radius;
+  background: $text-light;
+  color: $primary-dark;
+}
+
+.custom-modal .close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  border: 0;
+  background: transparent;
+  color: $primary-dark;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+body:not(.dark-theme) {
+  background: $text-light;
+  color: $primary-dark;
+
+  .site-header,
+  .movie-card,
+  .signup-section {
+    background: #eeeeee;
+  }
+
+  .navbar,
+  .navbar .nav-link,
+  .navbar-brand,
+  .navbar .navbar-toggler {
+    color: $primary-dark;
+  }
+}
